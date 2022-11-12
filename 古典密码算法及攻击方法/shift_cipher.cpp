@@ -31,9 +31,10 @@ int main()
 {
 
     string m;
-    m = "public keys";
+    m = "Computer Science and Tecnology";
     transform(m.begin(), m.end(), m.begin(), ::tolower);
     cout << m<<endl;
+    cout << encode(m,3)<<endl;
     decode(encode(m, 3));
 
 

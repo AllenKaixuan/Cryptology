@@ -13,7 +13,7 @@ int main()
 	map<char, int> table;
 	map<char, int>::iterator it;
 	pair<map<char, int>::iterator, bool> flag;
-	
+
 	for (int i = 0; i < str.size(); i++)
 	{
 		if (str[i] < 123 && str[i]>96)
@@ -25,9 +25,9 @@ int main()
 				it->second++;      //出现相同字符value值+1
 			}
 		}
-		
+
 	}
-	
+
 
 	multimap<int, char>reverse_table;
 	for (it = table.begin(); it != table.end(); it++)
@@ -36,6 +36,7 @@ int main()
 	}
 	for (multimap<int, char>::iterator iter = --reverse_table.end(); iter != --reverse_table.begin(); iter--)   //降序输出
 		if (iter->first >= 1)
-			cout << iter->second << " " << iter->first << endl;
+			cout << iter->second << " " << double(iter->first) / str.size() << endl;
+				
 	return 0;
 }
