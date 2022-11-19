@@ -81,9 +81,10 @@ int main()
         {
             encode(cases[i].txt,cases[i].key);
         }
+        else
+        {
+            decode(cases[i].txt,cases[i].key);
+        }
     }
-    
-  
-    
 	
 }

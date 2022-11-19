@@ -101,7 +101,7 @@ string hex_bin(const unsigned char *s)
 	{
 
 		int temp = s[i];
-		bitset<4> bitvec(temp);
+		bitset<8> bitvec(temp);
 		bin += bitvec.to_string();
 	}
 	return bin;
@@ -267,19 +267,20 @@ string encode(const unsigned char *txt, const unsigned char *key_char)
 	string m, key;
 	m = hex_bin(txt);
 	key = hex_bin(key_char);
-	key = key.substr(0,56);  // 测试给定key为64位？
-	round_key = key_utility(key);
+	round_key = key_utility(key); // 存储生成的轮函数
 	cout << "Encode: " << endl;
-	string c = plt_utility(m, round_key);
+	string c = plt_utility(m, round_key);  
 	cout << "Cipher Text: " << c << endl;
 	return c;
 }
 
-void decode(const unsigned char *cipher)
+void decode(const unsigned char *cipher, const unsigned char *key_char)
 {
-	string c = hex_bin(cipher);
+	string c ,key;
+	c = hex_bin(cipher);
+	key = hex_bin(key_char);
+	round_key = key_utility(key);
 	cout << "Decode" << endl;
-	reverse(round_key.begin(), round_key.end());
 	string text = plt_utility(c, round_key);
 	cout << "Plain Text: " << text << endl;
 }
