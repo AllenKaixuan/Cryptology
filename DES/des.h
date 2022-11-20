@@ -5,7 +5,6 @@
 #include <algorithm>
 using namespace std;
 #define NUM 8
-
 // 初始置换表
 int IP[64] = {58, 50, 42, 34, 26, 18, 10, 2, 60, 52, 44,
 			  36, 28, 20, 12, 4, 62, 54, 46, 38, 30, 22,
@@ -106,6 +105,8 @@ string hex_bin(const unsigned char *s)
 	}
 	return bin;
 }
+
+
 
 string bin_hex(string s)
 {
@@ -232,7 +233,7 @@ string plt_utility(string m, vector<string> round_key)
 	string combine = left + right;
 
 	// 逆初始置换IP
-	string cipher = bin_hex(replace(combine, IP_trans, 64));
+	string cipher = replace(combine, IP_trans, 64);
 	return cipher;
 }
 
@@ -270,7 +271,14 @@ string encode(const unsigned char *txt, const unsigned char *key_char)
 	round_key = key_utility(key); // 存储生成的轮函数
 	cout << "Encode: " << endl;
 	string c = plt_utility(m, round_key);  
-	cout << "Cipher Text: " << c << endl;
+	cout << "Cipher Text: " << bin_hex(c) << endl;
+	return c;
+}
+
+string encode_test(string m, string key)
+{
+	round_key = key_utility(key); // 存储生成的轮函数
+	string c = plt_utility(m, round_key);  
 	return c;
 }
 
@@ -282,5 +290,5 @@ void decode(const unsigned char *cipher, const unsigned char *key_char)
 	round_key = key_utility(key);
 	cout << "Decode" << endl;
 	string text = plt_utility(c, round_key);
-	cout << "Plain Text: " << text << endl;
+	cout << "Plain Text: " << bin_hex(text) << endl;
 }
