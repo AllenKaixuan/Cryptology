@@ -1,0 +1,21 @@
+﻿D:\Programe\VS\VS2020\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(Project1.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  BigIntcal.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\BigIntcal.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\BigIntcal.cpp(60,64): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\BigIntcal.cpp(107,64): warning C4293: “<<”: Shift 计数为负或过大，其行为未定义
+  BigIntdata.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\BigIntdata.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  BigIntop.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\BigIntop.cpp(68,20): warning C4018: “<=”: 有符号/无符号不匹配
+  des.cpp
+  RsaInit.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\rsa.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  rsa.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\rsa.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\rsa.cpp(157,15): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/FORCE”规范)
+rsa.obj : warning LNK4006: "class BigInt __cdecl RSADecode(class BigInt &,struct Rsa &)" (?RSADecode@@YA?AVBigInt@@AAV1@AAURsa@@@Z) 已在 RsaInit.obj 中定义；已忽略第二个定义
+rsa.obj : warning LNK4006: "class BigInt __cdecl RSAEncode(class BigInt &,struct Rsa &)" (?RSAEncode@@YA?AVBigInt@@AAV1@AAURsa@@@Z) 已在 RsaInit.obj 中定义；已忽略第二个定义
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\Debug\RSAInit.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  Project1.vcxproj -> D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\RSAInit\Debug\RSAInit.exe

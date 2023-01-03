@@ -1,0 +1,21 @@
+﻿  Client.cpp
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\rsa.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,22): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,22): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,26): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,26): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,33): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,33): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,44): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,44): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,48): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,48): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,56): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,56): warning C4309: “初始化”: 截断常量值
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,64): warning C4838: 从“int”转换到“char”需要收缩转换
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Client.cpp(24,64): warning C4309: “初始化”: 截断常量值
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/FORCE”规范)
+rsa.obj : warning LNK4006: "class BigInt __cdecl RSADecode(class BigInt &,struct Rsa &)" (?RSADecode@@YA?AVBigInt@@AAV1@AAURsa@@@Z) 已在 Client.obj 中定义；已忽略第二个定义
+rsa.obj : warning LNK4006: "class BigInt __cdecl RSAEncode(class BigInt &,struct Rsa &)" (?RSAEncode@@YA?AVBigInt@@AAV1@AAURsa@@@Z) 已在 Client.obj 中定义；已忽略第二个定义
+D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Debug\Client.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  Client.vcxproj -> D:\学习\学期3\密码学（古力）\Cryptology\RSA_AES\Client\Debug\Client.exe
